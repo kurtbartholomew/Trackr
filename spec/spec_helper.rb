@@ -37,8 +37,11 @@ RSpec.configure do |config|
     # Prevents you from mocking or stubbing a method that does not exist on
     # a real object. This is generally recommended, and will default to
     # `true` in RSpec 4.
+    
     mocks.verify_partial_doubles = true
   end
+
+  config.backtrace_exclusion_patterns << /\.rvm\/gems/
 
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
