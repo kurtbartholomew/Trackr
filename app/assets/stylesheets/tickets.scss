@@ -34,3 +34,20 @@ blockquote.comment p {
 #tickets li {
   padding-bottom: 10px;
 }
+
+.tag {
+  @extend .state !optional;
+  @extend .label-info !optional;
+  margin-right: 10px;
+
+  a {
+    color: white;
+
+    &.remove {
+      font-family: "FontAwesome";
+      @extend .fa-close !optional;
+      margin-right: 0.5em;
+      text-decoration: none;
+    }
+  }
+}
