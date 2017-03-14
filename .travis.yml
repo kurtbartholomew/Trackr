@@ -2,5 +2,12 @@ language: ruby
 rvm: 2.3.3
 script: bundle exec rspec
 before_install:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+deploy:
+  provider: heroku
+  api_key:
+    secure: PPQMTxlJE5S14uU6xtjOK4h65PpIKu/tNCZH5KK7gtHUba3aP4dY2MICiJq4T/wxNe9yzWztHC+XXunonNQg8Sf8VxEHd+Qz7Cux7Yiqpm3oSp7ulDkIYF0Vjs9jqvQ4S1WRrsCdaVWwKuG1rcssjs2MBBanQLkLe1Mou8zaGJwt0eCwTpYp9dLJIYlsBO3r/3mL0/2j0pRODeKoTOCei+Wik9OIE4D4HyddiOrTfAIthdTJsHesDXXoiMzp4a3h8ZZp2AuTRmQPKAUP6Tolr0Ru1hcvwWurTPvFaWbgOFnrTaPVflLcqFwmzEbHh7JUVbb5FZF1OrRTJNDk+cnrRiaS1KGgEi4bAVOlytmanJduExbYlM2yLvIhSA4Zh3s6PC/lvQ3eyC8Swk8u2IyZWMg3ClExEKNxTrx5GDf1WfN9OfKntoUTcKc2Gh6myNwLyKcLD+QMCpc+FXNrciA8E8Es9XPoEKti+TKaYbT0Lr4DoZaHmqxT+cpZzMloCmOINO/y7+L0sM646xumjt57wpcR5EdtWDvz/LM3wHGY4MJoIh66qJJKGSCYUM+yLIJKJgb55xytGJlkFwMY6++XTSBZduT1YVeZaVy0RxXU2d3GSEDZheo1Q6RMJCMhN3TjLD5DM57pKUvc+yDOCd5dD+ZStWVWWbcB+dyS79jDTj8=
+  app: stormy-harbor-84358
+  on:
+    repo: kurtbartholomew/Trackr
