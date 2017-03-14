@@ -36,7 +36,7 @@ gem "searcher", github: "radar/searcher"
 gem "email_spec", "~> 1.6.0"
 gem "fog", '~> 1.29.0'
 gem "puma", group: :production
-
+gem "net-ssh"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
