@@ -31,6 +31,7 @@ gem "font-awesome-rails", "~> 4.3"
 gem "devise", "~> 3.4.1"
 gem "pundit", "~> 0.3.0"
 gem "carrierwave", "~> 0.10.0"
+gem "searcher", github: "radar/searcher"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -58,7 +59,7 @@ end
 group :test do
   gem 'capybara', '~> 2.4'
   gem "factory_girl_rails", "~> 4.5"
-  gem "selenium-webdriver", "~> 2.45"
+  gem "selenium-webdriver"
   gem "database_cleaner", "~> 1.4"
 end
 
