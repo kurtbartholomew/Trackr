@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pg'
+gem "rails_12factor", group: :production
 
 gem 'bootstrap-sass', '~> 3.3'
 gem "simple_form", "~> 3.1.0"
@@ -33,6 +34,7 @@ gem "pundit", "~> 0.3.0"
 gem "carrierwave", "~> 0.10.0"
 gem "searcher", github: "radar/searcher"
 gem "email_spec", "~> 1.6.0"
+gem "fog", '~> 1.29.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
