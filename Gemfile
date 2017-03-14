@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.3.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -35,6 +35,8 @@ gem "carrierwave", "~> 0.10.0"
 gem "searcher", github: "radar/searcher"
 gem "email_spec", "~> 1.6.0"
 gem "fog", '~> 1.29.0'
+gem "puma", group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
