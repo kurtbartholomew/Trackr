@@ -38,6 +38,7 @@ gem "fog", '~> 1.29.0'
 gem "puma", group: :production
 gem "net-ssh"
 gem "active_model_serializers", "~> 0.9.3"
+gem "sinatra"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
